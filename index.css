@@ -58,16 +58,25 @@ nav a {
 
 .features {
     display: flex;
-    flex-direction: column; /* Stack features vertically */
+    flex-direction: row; /* Arrange features horizontally */
+    justify-content: space-between; /* Distribute space evenly between features */
     padding: 50px 0;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
 .feature {
     text-align: center;
-    margin: 15px 0; /* Space between stacked features */
-    padding: 30px; /* Increased padding for a taller box like in the screenshot */
+    width: 300px; /* Fixed width to make it square */
+    height: 300px; /* Fixed height to make it square */
+    margin: 5px; /* Space between features */
+    padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically inside the square */
+    align-items: center; /* Center content horizontally inside the square */
+    box-sizing: border-box; /* Ensure padding doesn’t affect the square dimensions */
 }
 
 .feature h3 {
@@ -98,6 +107,8 @@ nav a {
 .feature-2 {
     background: #fefcbf;
     border: 2px solid #d69e2e;
+    margin-left: 430px;
+    margin-top:-304px;;
 }
 
 .feature-2 h3 {
@@ -112,6 +123,8 @@ nav a {
 .feature-3 {
     background: #e6fffa;
     border: 2px solid #38b2ac;
+    margin-left: 850px;
+    margin-top:-304px;;
 }
 
 .feature-3 h3 {
@@ -121,6 +134,18 @@ nav a {
 .feature-3:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design: Stack features vertically on smaller screens */
+@media (max-width: 1000px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin: 20px 0;
+    }
 }
 
 footer {

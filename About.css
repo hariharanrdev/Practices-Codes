@@ -1,0 +1,54 @@
+/* Reset body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section for About Page */
+header {
+    background: #1a202c;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #edf2f7;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* About Sections */
+.about-sections {
+    padding: 50px 0;
+    background: #f7fafc;
+}
+
+.about-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+}
